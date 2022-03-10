@@ -1,0 +1,1086 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Estudio Nod</title>
+    <link rel="shortcut icon" href="img/Nod_Icon16.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./work.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@mux/videojs-kit@0.1/dist/index.css"
+    />
+
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body onscroll="pauseWVid">
+    <!-- Menu -->
+
+    <svg
+      id="Menu"
+      onclick="toggleNavPanel('sections_panel')"
+      width="50"
+      height="50"
+      viewBox="0 0 52 52"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="26" cy="26" r="26" fill="white" />
+      <rect x="15.2002" y="32" width="20.8" height="2.4" fill="black" />
+      <rect x="15.2002" y="24.7998" width="20.8" height="2.4" fill="black" />
+      <rect x="15.2002" y="17.6001" width="20.8" height="2.4" fill="black" />
+    </svg>
+
+    <div>
+      <div id="sections_panel">
+        <div id="menu-wrapper">
+          <div class="vline"></div>
+
+          <div id="directorywrap">
+            <div class="directory">
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="index.html"
+                >About.
+              </a>
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#letstalk"
+                >Contact.
+              </a>
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#clientbox"
+                >Clients.
+              </a>
+              <a class="linkd" href="work.html">Work.</a>
+            </div>
+
+            <div class="hline" id="hline2"></div>
+            <div class="directory">
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#herologo"
+                >Real State.
+              </a>
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#letstalk"
+                >Competitions.
+              </a>
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#clientbox"
+                >Product Design.
+              </a>
+            </div>
+            <div id="dcontact">
+              <a
+                class="button"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#herologo"
+                >Let's talk.
+              </a>
+            </div>
+            <div class="hline"></div>
+            <div id="details">
+              <div class="contactdiv">
+                <a class="contactinfo" href="www.estudionod.com"
+                  >ESTUDIONOD.COM</a
+                >
+
+                <a class="contactinfo" href="mailto:hello@estudionod.com"
+                  >HELLO@ESTUDIONOD.COM</a
+                >
+                <a class="contactinfo" href="tel:+1 302 538 9684"
+                  >CEL: +1 302 5389684</a
+                >
+              </div>
+              <div class="vline"></div>
+              <div class="contactdiv" id="socialmedia">
+                <a
+                  class="contactinfo"
+                  href="https://www.instagram.com/estudionod/"
+                  target="”_blank”"
+                  >INSTAGRAM</a
+                >
+                <a
+                  class="contactinfo"
+                  href="https://www.linkedin.com/company/estudionod"
+                  target="”_blank”"
+                  >LINKEDIN</a
+                >
+                <a
+                  class="contactinfo"
+                  href="https://www.behance.net/estudionod"
+                  target="”_blank”"
+                  >BEHANCE</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="vline"></div>
+          <div id="closewrap">
+            <svg
+              id="close"
+              onclick="toggleNavPanel('sections_panel')"
+              width="25"
+              height="25"
+              viewBox="0 0 33 33"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.3379 12.7451L3.75879 0L0.428569 3.28687L13.0293 16.0538L0 29.083L3.30862 32.3916L16.3162 19.384L28.6956 31.9268L32.0259 28.6399L19.6249 16.0754L31.7627 3.93753L28.4541 0.628914L16.3379 12.7451Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing -->
+
+    <div id="content">
+        <!-- Hero Text  -->
+  
+        <div id="worktitle">
+          <h1 class="anim1">work.</h1>
+        </div>
+  
+        <div id="filters">
+          <button class="filter active" onclick="filterSelection('all')">
+            ALL,
+          </button>
+          <button class="filter" onclick="filterSelection('render')">
+            RENDERS,
+          </button>
+          <button class="filter" onclick="filterSelection('movie')">
+            MOVIES,
+          </button>
+          <button class="filter" onclick="filterSelection('web')">
+            WEB VR
+          </button>
+        </div>
+  
+        <!-- Gallery  -->
+  
+        <div class="container">
+          <div class="gallery">
+            <figure
+              class="anim gallery__landscape7 column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_BOD_GMP_IngresoNoche.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_BOD_GMP_IngresoNoche_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_BOD_GMP_IngresoNoche.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_BOD_GMP_IngresoNoche_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/O_BOD_GMP_IngresoNoche_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/O_BOD_GMP_IngresoNoche.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E02.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E02_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E02.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E02_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/O_BOD_ConcursoCastellana_E02_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/O_BOD_ConcursoCastellana_E02.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0.4s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E03.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E03_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E03.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_BOD_ConcursoCastellana_E03_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/O_BOD_ConcursoCastellana_E03_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/O_BOD_ConcursoCastellana_E03_960.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape7 column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_OrtizLeon_Fuencarral_Frente.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_OrtizLeon_Fuencarral_Frente_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_OrtizLeon_Fuencarral_Frente.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_OrtizLeon_Fuencarral_Frente_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/O_OrtizLeon_Fuencarral_Frente_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/O_OrtizLeon_Fuencarral_Frente.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column movie"
+              data-delay="0s"
+            >
+              <video
+                id="my-video"
+                class="video-js vjs-theme-forest vjs-big-play-centered"
+                controls
+                preload="auto"
+                poster="img/AFT_NUMA_C07_960.jpg"
+                data-setup='{"fluid": true}'
+              >
+                <source
+                  src="tH01jY9RZeXIKIKE9N00H2H3jvi9EwwKNC1CJujgWUe8I"
+                  type="video/mux"
+                />
+              </video>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column movie"
+              data-delay="0s"
+            >
+              <video
+                id="my-video"
+                class="video-js vjs-theme-forest vjs-big-play-centered"
+                controls
+                preload="auto"
+                poster="https://image.mux.com/uxfShqjS0202w9YgfCQUTm7C78Dk6tebRFR2Ijn4QnbYo/thumbnail.jpg?time=85"
+                data-setup='{"fluid": true}'
+              >
+                <source
+                  src="uxfShqjS0202w9YgfCQUTm7C78Dk6tebRFR2Ijn4QnbYo"
+                  type="video/mux"
+                />
+              </video>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape8 column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/19.07.05_Losenebo_Landscape.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/19.07.05_Losenebo_Landscape_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/19.07.05_Losenebo_Landscape.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/19.07.05_Losenebo_Landscape_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/19.07.05_Losenebo_Landscape_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/19.07.05_Losenebo_Landscape.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_square column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C01.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C01_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C01.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C01_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="
+                    img/O_Arkitema_Barkabystaden_C01_960.jpg  960w,
+                    img/O_Arkitema_Barkabystaden_C01.jpg     2000w
+                  "
+                  sizes="(max-width: 960px) 960px, 2000px"
+                  src="img/O_Arkitema_Barkabystaden_C01.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_square column render"
+              data-delay="0.4s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C03_Day.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C03_Day_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C03_Day.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_Arkitema_Barkabystaden_C03_Day_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="
+                    img/O_Arkitema_Barkabystaden_C03_Day_960.jpg  960w,
+                    img/O_Arkitema_Barkabystaden_C03_Day.jpg     2000w
+                  "
+                  sizes="(max-width: 960px) 960px, 2000px"
+                  src="img/O_Arkitema_Barkabystaden_C03_Day.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape8 column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_OrtizLeon_NeinorKodak_01.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_OrtizLeon_NeinorKodak_01_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_OrtizLeon_NeinorKodak_01.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_OrtizLeon_NeinorKodak_01_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/O_OrtizLeon_NeinorKodak_01_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/O_OrtizLeon_NeinorKodak_01.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/3gOffice_OM_C02.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/3gOffice_OM_C02_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/3gOffice_OM_C02.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/3gOffice_OM_C02_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/3gOffice_OM_C02_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/3gOffice_OM_C02.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0.4s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/3gOffice_OM_C08_Coworking.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/3gOffice_OM_C08_Coworking_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/3gOffice_OM_C08_Coworking.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/3gOffice_OM_C08_Coworking_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/3gOffice_OM_C08_Coworking_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/3gOffice_OM_C08_Coworking.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape7 column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/AFT_YPF_E02C.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/AFT_YPF_E02C_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/AFT_YPF_E02C.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/AFT_YPF_E02C_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/AFT_YPF_E02C_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/AFT_YPF_E02C.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/AMMB_Base_EnfoqueCaminos.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/AMMB_Base_EnfoqueCaminos_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/AMMB_Base_EnfoqueCaminos.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/AMMB_Base_EnfoqueCaminos_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/AMMB_Base_EnfoqueCaminos_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/AMMB_Base_EnfoqueCaminos.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0.4s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/AMMB_Base_ConjuntoAtardecer.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/AMMB_Base_ConjuntoAtardecer_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/AMMB_Base_ConjuntoAtardecer.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/AMMB_Base_ConjuntoAtardecer_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/AMMB_Base_ConjuntoAtardecer_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/AMMB_Base_ConjuntoAtardecer.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <a
+            href="https://www.estudionod.com/lamacarena/"
+            target="_blank"
+            class="anim gallery__landscape8 column web"
+            data-delay="0s"
+          >
+            <picture>
+              <source
+                media="(min-width: 1025px)"
+                srcset="img/Device_Mashups.webp"
+                type="image/webp"
+              />
+              <source
+                media="(max-width: 960px)"
+                srcset="img/Device_Mashups_960.webp"
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 1025px)"
+                srcset="img/Device_Mashups.jpg"
+                type="image/jpeg"
+              />
+              <source
+                media="(max-width: 960px)"
+                srcset="img/Device_Mashups_960.jpg"
+                type="image/jpeg"
+              />
+  
+              <img
+                alt="Gallery image 3"
+                class="gallery__img"
+                loading="lazy"
+                srcset="img/Device_Mashups_960.jpg 960w"
+                sizes="(max-width: 960px) 960px"
+                src="img/Device_Mashups.jpg"
+              />
+            </picture>
+          </a>
+  
+            <figure
+              class="anim gallery__landscape_square column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Tectum_V03_I01.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Tectum_V03_I01_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Tectum_V03_I01.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Tectum_V03_I01_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/Tectum_V03_I01_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/Tectum_V03_I01.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_square column render"
+              data-delay="0.4s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_3GOffice_MBecerra_Aerea.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_3GOffice_MBecerra_Aerea_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/O_3GOffice_MBecerra_Aerea.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/O_3GOffice_MBecerra_Aerea_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/O_3GOffice_MBecerra_Aerea_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/O_3GOffice_MBecerra_Aerea.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape8 column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Urban_Berilo_E10.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Urban_Berilo_E10_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Urban_Berilo_E10.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Urban_Berilo_E10_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/Urban_Berilo_E10_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/Urban_Berilo_E10.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/OrtizLeon_FuenCarral_Hall_V02.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/OrtizLeon_FuenCarral_Hall_V02_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/OrtizLeon_FuenCarral_Hall_V02.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/OrtizLeon_FuenCarral_Hall_V02_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/OrtizLeon_FuenCarral_Hall_V02_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/OrtizLeon_FuenCarral_Hall_V02.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_small column render"
+              data-delay="0.4s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/OrtizLeon_Fuencarral_Patio_V02.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/OrtizLeon_Fuencarral_Patio_V02_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/OrtizLeon_Fuencarral_Patio_V02.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/OrtizLeon_Fuencarral_Patio_V02_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/OrtizLeon_Fuencarral_Patio_V02_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/OrtizLeon_Fuencarral_Patio_V02.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape8 column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Javier_Lopes_Revol_-_Rural_A01_CC.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Javier_Lopes_Revol_-_Rural_A01_CC_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Javier_Lopes_Revol_-_Rural_A01_CC.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Javier_Lopes_Revol_-_Rural_A01_CC_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/Javier_Lopes_Revol_-_Rural_A01_CC_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/Javier_Lopes_Revol_-_Rural_A01_CC.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_square column render"
+              data-delay="0s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/BOD_LasAgujas_VistaPiscinaA_V02.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/BOD_LasAgujas_VistaPiscinaA_V02_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/BOD_LasAgujas_VistaPiscinaA_V02.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/BOD_LasAgujas_VistaPiscinaA_V02_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="img/BOD_LasAgujas_VistaPiscinaA_V02_960.jpg 960w"
+                  sizes="(max-width: 960px) 960px"
+                  src="img/BOD_LasAgujas_VistaPiscinaA_V02.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure
+              class="anim gallery__landscape_square column render"
+              data-delay="0.4s"
+            >
+              <picture>
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Cleverteck_Moskovski_V11_Calle_Interior.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Cleverteck_Moskovski_V11_Calle_Interior_960.webp"
+                  type="image/webp"
+                />
+                <source
+                  media="(min-width: 1025px)"
+                  srcset="img/Cleverteck_Moskovski_V11_Calle_Interior.jpg"
+                  type="image/jpeg"
+                />
+                <source
+                  media="(max-width: 960px)"
+                  srcset="img/Cleverteck_Moskovski_V11_Calle_Interior_960.jpg"
+                  type="image/jpeg"
+                />
+  
+                <img
+                  alt="Gallery image 3"
+                  class="gallery__img"
+                  loading="lazy"
+                  srcset="
+                    img/Cleverteck_Moskovski_V11_Calle_Interior_960.jpg 960w
+                  "
+                  sizes="(max-width: 960px) 960px"
+                  src="img/Cleverteck_Moskovski_V11_Calle_Interior.jpg"
+                />
+              </picture>
+            </figure>
+  
+            <figure class="anim gallery__landscape8 column movie" data-delay="0s">
+              <video
+                id="my-video"
+                class="video-js vjs-theme-forest vjs-big-play-centered"
+                controls
+                preload="auto"
+                poster="https://image.mux.com/e8dtEhHdgL4LAgrMxNtN6kJY7NwisNH6c7wQD9EF02us/thumbnail.jpg?time=12"
+                data-setup='{"fluid": true}'
+              >
+                <source
+                  src="e8dtEhHdgL4LAgrMxNtN6kJY7NwisNH6c7wQD9EF02us"
+                  type="video/mux"
+                />
+              </video>
+            </figure>
+  
+  
+          </div>
+        </div>
+  
+   
+
+  
+        <script src="https://unpkg.com/@mux/videojs-kit@0.1/dist/index.js"></script>
+        <script type="text/javascript" src="filter.js"></script>
+  
+        <!-- Start of HubSpot Embed Code -->
+        <!-- <script
+          type="text/javascript"
+          id="hs-script-loader"
+          async
+          defer
+          src="//js-na1.hs-scripts.com/20767254.js"
+        ></script> -->
+        <!-- End of HubSpot Embed Code -->
+      </div>
+
+    <script src="https://unpkg.com/@mux/videojs-kit@0.1/dist/index.js"></script>
+    <script src="./menu.js"></script>
+  </body>
+</html>

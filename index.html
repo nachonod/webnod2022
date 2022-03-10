@@ -1,0 +1,466 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Estudio Nod</title>
+    <link rel="shortcut icon" href="img/Nod_Icon16.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./index.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@mux/videojs-kit@0.1/dist/index.css"
+    />
+
+    <link
+      href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+  </head>
+  <body onscroll="pauseVid()">
+    <!-- Menu -->
+
+    <svg
+      id="Menu"
+      onclick="toggleNavPanel('sections_panel')"
+      width="50"
+      height="50"
+      viewBox="0 0 52 52"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <circle cx="26" cy="26" r="26" fill="white" />
+      <rect x="15.2002" y="32" width="20.8" height="2.4" fill="black" />
+      <rect x="15.2002" y="24.7998" width="20.8" height="2.4" fill="black" />
+      <rect x="15.2002" y="17.6001" width="20.8" height="2.4" fill="black" />
+    </svg>
+
+    <div>
+      <div id="sections_panel">
+        <div id="menu-wrapper">
+          <div class="vline"></div>
+
+          <div id="directorywrap">
+            <div class="directory">
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#herologo"
+                >About.
+              </a>
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#letstalk"
+                >Contact.
+              </a>
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#clientbox"
+                >Clients.
+              </a>
+              <a class="linkd" href="work.html">Work.</a>
+            </div>
+
+            <div class="hline" id="hline2"></div>
+            <div class="directory">
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#herologo"
+                >Real State.
+              </a>
+              <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#letstalk"
+                >Competitions.
+              </a>
+              <!-- <a
+                class="linkd"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="#clientbox"
+                >Product Design.
+              </a> -->
+            </div>
+            <div id="dcontact">
+              <a
+                class="button invert"
+                onclick="toggleNavPanel2('sections_panel')"
+                href="form.html"
+                >Let's talk.
+              </a>
+            </div>
+            <div class="hline"></div>
+            <div id="details">
+              <div class="contactdiv">
+                <a class="contactinfo" href="www.estudionod.com"
+                  >ESTUDIONOD.COM</a
+                >
+
+                <a class="contactinfo" href="mailto:hello@estudionod.com"
+                  >HELLO@ESTUDIONOD.COM</a
+                >
+                <a class="contactinfo" href="tel:+1 302 538 9684"
+                  >CEL: +1 302 5389684</a
+                >
+              </div>
+              <div class="vline"></div>
+              <div class="contactdiv" id="socialmedia">
+                <a
+                  class="contactinfo"
+                  href="https://www.instagram.com/estudionod/"
+                  target="”_blank”"
+                  >INSTAGRAM</a
+                >
+                <a
+                  class="contactinfo"
+                  href="https://www.linkedin.com/company/estudionod"
+                  target="”_blank”"
+                  >LINKEDIN</a
+                >
+                <a
+                  class="contactinfo"
+                  href="https://www.behance.net/estudionod"
+                  target="”_blank”"
+                  >BEHANCE</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="vline"></div>
+          <div id="closewrap">
+            <svg
+              id="close"
+              onclick="toggleNavPanel('sections_panel')"
+              width="25"
+              height="25"
+              viewBox="0 0 33 33"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M16.3379 12.7451L3.75879 0L0.428569 3.28687L13.0293 16.0538L0 29.083L3.30862 32.3916L16.3162 19.384L28.6956 31.9268L32.0259 28.6399L19.6249 16.0754L31.7627 3.93753L28.4541 0.628914L16.3379 12.7451Z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Landing-->
+
+    <div
+      id="videoDiv2"
+      onclick="playVid()"
+
+    >
+      <video
+        id="video2"
+        class="video-js preel"
+        preload=""
+        autoplay=""
+        muted=""
+        playsinline=""
+        loop=""
+        poster="https://image.mux.com/WlztE4iR5dR1Zo6nx2tHBV9CS58EHqf012GnKdcMjb4E/thumbnail.jpg?time=0"
+        data-setup='{"fluid": true}'
+      >
+        <source
+          src="tH01jY9RZeXIKIKE9N00H2H3jvi9EwwKNC1CJujgWUe8I"
+          type="video/mux"
+        />
+      </video>
+
+      <div id="videoMessage2" style="transform: translateX(0%)">
+        <?xml version="1.0" encoding="UTF-8"?>
+        <svg
+          id="logohead"
+          fill="none"
+          viewBox="0 0 135 31"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m128.38 30.355v-29.782h-4.857v10.907c-1.513-1.5582-3.987-2.4926-6.738-2.4926-6.965 0-10.907 5.2522-10.907 10.997 0 5.6965 3.942 10.951 10.907 10.951 2.751 0 5.235-0.9345 6.738-2.4927v1.9128h4.857zm-17.643-10.371c0-3.6065 2.566-6.6352 6.371-6.6352 3.345 0 6.598 2.1839 6.598 6.6352s-3.253 6.5872-6.598 6.5872c-3.794 0-6.371-3.0266-6.371-6.5872zm-103.91-8.4729v18.858h4.2643l4.262-10.776v-18.858h-4.262l-4.2643 10.776zm-6.8203 18.859v-18.858l3.0919-10.776h3.094v18.858l-3.094 10.776h-3.0919zm131.71-2.7645c-0.196 0.2874-0.301 0.625-0.3 0.9702-7e-3 0.2304 0.035 0.4598 0.122 0.674 0.088 0.2142 0.22 0.4087 0.388 0.5716s0.368 0.2908 0.589 0.3757c0.22 0.085 0.457 0.1252 0.694 0.1183 0.355 4e-4 0.702-0.1016 0.998-0.2932 0.296-0.1915 0.526-0.4639 0.662-0.7828 0.136-0.3188 0.172-0.6697 0.102-1.0082-0.069-0.3386-0.24-0.6494-0.492-0.8934-0.251-0.2439-0.571-0.4098-0.92-0.4768-0.348-0.067-0.709-0.032-1.038 0.1006-0.328 0.1325-0.608 0.3567-0.805 0.644zm2.705 0.1808c0.163 0.233 0.252 0.5077 0.254 0.7894 6e-3 0.1893-0.028 0.3778-0.099 0.554-0.072 0.1763-0.179 0.3365-0.316 0.4711s-0.301 0.2408-0.482 0.3119c-0.181 0.0712-0.374 0.106-0.569 0.1022-0.29 4e-4 -0.574-0.0826-0.815-0.2386-0.242-0.1559-0.43-0.3779-0.542-0.6378-0.112-0.26-0.142-0.5462-0.087-0.8228 0.055-0.2765 0.194-0.531 0.398-0.7312s0.464-0.3373 0.748-0.3939c0.285-0.0567 0.58-0.0303 0.848 0.0757 0.269 0.106 0.499 0.2869 0.662 0.52zm-1.219 0.8853l0.481 0.7739 0.393-0.0021-0.53-0.8343c0.096-0.0382 0.177-0.1037 0.233-0.1879 0.057-0.0842 0.085-0.1831 0.082-0.2836 1e-3 -0.0756-0.014-0.1505-0.046-0.2197-0.031-0.0692-0.077-0.1312-0.135-0.1817-0.058-0.0506-0.126-0.0885-0.201-0.1114-0.074-0.0228-0.152-0.03-0.229-0.0211h-0.715v1.8418h0.337v-0.7739h0.33zm0.011-0.2899h-0.335l-6e-3 -0.4881h0.341c0.2 0 0.309 0.0939 0.309 0.244 0 0.1502-0.109 0.2441-0.309 0.2441zm-117.23 1.9878v-18.858l7.2231-10.776h7.223v18.858l-7.223 10.776h-7.2231zm15.081-11.424v11.424h14.446v-29.634h-2.2394l-12.207 18.21zm47.228 11.41v-29.559h-5.0372v22.302l-16.864-22.302h-5.546v29.559h5.0372v-22.302l16.864 22.302h5.5461zm25.983-10.371c0 6.2764-4.9381 10.951-11.412 10.951-6.5531 0-11.455-4.6745-11.455-10.951 0-6.3222 4.902-10.997 11.455-10.997 6.4629 0 11.412 4.6745 11.412 10.997zm-4.8586 0c0-3.8296-2.7033-6.6351-6.5531-6.6351-3.7983 0-6.5896 2.7992-6.5896 6.6351 0 3.7379 2.7913 6.5872 6.5982 6.5872 3.8412 0.0063 6.5445-2.8493 6.5445-6.5872z"
+            clip-rule="evenodd"
+            fill="#141414"
+            fill-rule="evenodd"
+          />
+        </svg>
+
+        <div id="h1-wrapper">
+          <h1 class="fluid-type-title">It's All About Delivery.</h1>
+        </div>
+        <div class="hline"></div>
+        <div id="introtext">
+          <p class="fluid-type light cpadding">
+            Designing is hard. And since there is no unique correct solution
+            communication becomes vital. <br /><br />
+            We make the delivery of your project easier, quicker, less
+            stressful, and more fun. So you can focus a lot more on creating and
+            a lot less on worrying about connecting with your client. It's all
+            about delivery
+          </p>
+
+          <div id="buttonwrap">
+            <a class="button invert" style="margin-bottom: 2vh" href="form.html"
+              >Let's talk.
+            </a>
+          </div>
+        </div>
+        <div class="hline"></div>
+      </div>
+    </div>
+
+    <!-- Services -->
+
+    <div id="services-wrapper">
+      <div class="services-title-wrapper">
+        <p class="fluid-type">THIS ARE OUR</p>
+        <h1 class="fluid-type-title">Services.</h1>
+      </div>
+      <div id="services-grid-wrapper">
+        <a
+          href="work.html"
+          onclick="filterSelection('render')"
+          class="service-details"
+        >
+          <div style="background-color: black; margin: 5px">
+            <img class="fill" src="img/New/Modeling.jpg" alt="" />
+          </div>
+          <div class="service-details-text">
+            <p class="fluid-type">Modeling (00)</p>
+            <div class="hline"></div>
+            <p class="fluid-type light">
+              Whether you are working with architects or designers, or you are
+              simply looking to create stunning 3D visualizations, it all hinges
+              upon having a solid database of 3D models.
+            </p>
+            <p class="fluid-type">Explore</p>
+          </div>
+        </a>
+        <a href="work.html" class="service-details">
+          <div style="background-color: black; margin: 5px">
+            <img class="fill" src="img/New/Stills.jpg" alt="" />
+          </div>
+          <div class="service-details-text">
+            <p class="fluid-type">Renders (01)</p>
+            <div class="hline"></div>
+            <p class="fluid-type light">
+              Renderings have become vital for promoting products and real
+              estate projects. They are an integral part of presentations as
+              they add extra value to every design.
+            </p>
+            <p class="fluid-type">Explore</p>
+          </div>
+        </a>
+        <a href="work.html" class="service-details">
+          <div style="background-color: black; margin: 5px">
+            <img class="fill" src="img/New/Movie.jpg" alt="" />
+          </div>
+          <div class="service-details-text">
+            <p class="fluid-type medium">Movies (02)</p>
+            <div class="hline"></div>
+            <p class="fluid-type light">
+              Customers will only buy when they understand your design, what it
+              does and how it will help them and video has became the best
+              medium to deliver that.
+            </p>
+            <p class="fluid-type">Explore</p>
+          </div>
+        </a>
+        <a href="work.html" class="service-details">
+          <div style="background-color: black; margin: 5px">
+            <img class="fill" src="img/New/WebVR.jpg" alt="" />
+          </div>
+          <div class="service-details-text">
+            <p class="fluid-type">Web VR (03)</p>
+            <div class="hline"></div>
+            <p class="fluid-type light">
+              Websites allow us to display your projects using every single one
+              of our resources. Renders, animations, 360° tours and even 3D
+              models all in the same place, attainable with only one click.
+            </p>
+            <p class="fluid-type">Explore</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <!-- Real State -->
+
+    <div class="client-type-wrapper">
+      <div class="client-type-text-grid">
+        <div class="services-title-wrapper no-bottom">
+          <p class="fluid-type">CASE STUDY</p>
+          <h1 class="fluid-type-title">Real State.</h1>
+        </div>
+        <div class="client-type-details">
+          <div class="hline"></div>
+          <p class="fluid-type cpadding">
+            Websites allow us to display your projects using every single one of
+            our resources. Renders, animations, 360° tours and even 3D models
+            all in the same place, attainable with only one click.
+          </p>
+          <a
+            class="button explore"
+            onclick="toggleNavPanel2('sections_panel')"
+            href="form.html"
+            >Explore.
+          </a>
+        </div>
+      </div>
+      <figure class="client-type-video" data-delay="0s">
+        <video
+          id="my-player"
+          class="video-js vjs-16-9 vjs-theme-forest"
+          playsinline
+          autoplay="true"
+          muted
+          loop
+          preload="auto"
+          disableRemotePlayback
+          x-webkit-airplay="deny"
+          disablePictureInPicture
+          poster="https://image.mux.com/xTveQhibrWyXyNX01Yirx9GNDjXHYHpFtOl02ZBI8FYpU/thumbnail.jpg?time=0"
+          data-setup="{}"
+        >
+          <source
+            src="xTveQhibrWyXyNX01Yirx9GNDjXHYHpFtOl02ZBI8FYpU"
+            type="video/mux"
+          />
+        </video>
+      </figure>
+    </div>
+
+    <!-- Competitions -->
+
+    <div class="client-type-wrapper">
+      <div class="client-type-text-grid">
+        <div class="services-title-wrapper no-bottom">
+          <p class="fluid-type">CASE STUDY</p>
+          <h1 class="fluid-type-title">Competitions.</h1>
+        </div>
+        <div class="client-type-details">
+          <div class="hline"></div>
+          <p class="fluid-type cpadding">
+            Websites allow us to display your projects using every single one of
+            our resources. Renders, animations, 360° tours and even 3D models
+            all in the same place, attainable with only one click.
+          </p>
+          <a
+            class="button explore"
+            onclick="toggleNavPanel2('sections_panel')"
+            href="form.html"
+            >Explore.
+          </a>
+        </div>
+      </div>
+      <figure class="client-type-video video-switch" data-delay="0s">
+        <video
+          id="my-player"
+          class="video-js vjs-16-9 vjs-theme-forest"
+          playsinline
+          autoplay="true"
+          muted
+          loop
+          preload="auto"
+          disableRemotePlayback
+          x-webkit-airplay="deny"
+          disablePictureInPicture
+          poster="https://image.mux.com/j3UviSlNC4w5XMitzRlUnXvf00qyER6y01lpSpwlxPzAs/thumbnail.jpg?time=0"
+          data-setup="{}"
+        >
+          <source
+            src="j3UviSlNC4w5XMitzRlUnXvf00qyER6y01lpSpwlxPzAs"
+            type="video/mux"
+          />
+        </video>
+      </figure>
+    </div>
+
+    <!-- Clients -->
+
+    <!-- <div id="services-wrapper">
+          <div class="services-title-wrapper">            
+            <h1 class="fluid-type-title">We Worked For.</h1>
+            <p class="fluid-type">Google, Arup, Arkitema,  KPF, 3g Office, Bod, Ortiz León Architects, Urbania, Alex Poulsen Arkitekter A/S.</p>
+          </div>
+          <div id="services-grid-wrapper">
+            <div class="service-details">
+              <div class="vvbox">
+                <video
+                  id="my-video"
+                  class="video-js  vjs-theme-forest vjs-big-play-centered"
+                  controls
+                  preload="auto"
+                  poster="https://image.mux.com/3BVsREldWEYHLf31PiO3oTPuAIgCAClI00729B3fFb5Y/thumbnail.jpg?time=0"
+                  data-setup='{"fluid": true}'
+                  >
+                  <source
+                  src="3BVsREldWEYHLf31PiO3oTPuAIgCAClI00729B3fFb5Y"
+                  type="video/mux"
+                />                  
+               </div>
+              <div class="service-details-text">
+                <p class="fluid-type">ARUP </p>
+                <div class="hline"></div>
+                <p class="fluid-type">
+                  “Their ability to build up images and narratives in different scales and typologies is pretty much appreciated. Their passion, their dedication, their friendship are something we appreciate much in our studio.”
+                </p>
+                <p class="fluid-type"> Jose Marquez. Associate at ARUP
+                </p>
+              </div>
+            </div>
+            <div class="service-details">
+              <div style="background-color: black; margin: 5px"></div>
+              <div class="service-details-text">
+                <p class="fluid-type">Renders (01)</p>
+                <div class="hline"></div>
+                <p class="fluid-type">
+                  Renderings have become vital for promoting products and real
+                  estate projects. They are an integral part of presentations as
+                  they add extra value to every design.
+                </p>
+                <a href="" class="fluid-type">Explore</a>
+              </div>
+            </div>
+            <div class="service-details">
+              <div style="background-color: black; margin: 5px"></div>
+              <div class="service-details-text">
+                <p class="fluid-type medium">Movies (02)</p>
+                <div class="hline"></div>
+                <p class="fluid-type">
+                  Customers will only buy when they understand your design, what it
+                  does and how it will help them and video has became the best
+                  medium to deliver that.
+                </p>
+                <a href="" class="fluid-type">Explore</a>
+              </div>
+            </div>
+            <div class="service-details">
+              <div style="background-color: black; margin: 5px"></div>
+              <div class="service-details-text">
+                <p class="fluid-type">Web VR (03)</p>
+                <div class="hline"></div>
+                <p class="fluid-type">
+                  Websites allow us to display your projects using every single one
+                  of our resources. Renders, animations, 360° tours and even 3D
+                  models all in the same place, attainable with only one click.
+                </p>
+                <a href="" class="fluid-type">Explore</a>
+              </div>
+            </div>
+          </div>
+        </div> -->
+
+    <script src="https://unpkg.com/@mux/videojs-kit@latest/dist/index.js"></script>
+
+    <script src="./menu.js"></script>
+  </body>
+</html>

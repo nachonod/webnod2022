@@ -1,0 +1,441 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: EEEEEE;
+}
+
+@font-face {
+  font-family: Aeroport;
+  src: url(./fonts/Aeroport.otf);
+}
+
+@font-face {
+  font-family: Aeroport Mono;
+  src: url(./fonts/Aeroport\ Mono.otf);
+}
+
+/* Menu  */
+
+a:hover {
+  color: white;
+}
+
+#menu {
+  position: fixed;
+  top: 4.2vh;
+  right: 4vh;
+  cursor: pointer;
+  z-index: 4;
+}
+
+#menu:hover {
+  filter: invert(1);
+}
+
+#sections_panel {
+  position: fixed;
+  right: 0px;
+  height: 100%;
+  width: 0vw;
+  background: #ef4125;
+  overflow: hidden;
+  z-index: 5;
+  /* transition: height 0.3s linear 0s; */
+  transition-property: width;
+  transition-duration: 0.35s;
+  transition-timing-function: cubic-bezier(0.43, 0.11, 0.24, 0.95);
+}
+
+#menu-wrapper {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1px 1fr 1px 10%;
+  padding: 5vh;
+}
+
+#closewrap {
+  width: 100%;
+  height: 25px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#close {
+  cursor: pointer;
+  fill: black;
+}
+
+#close:hover {
+  fill: white;
+}
+
+.vline {
+  width: 1px;
+  background-color: black;
+}
+
+.hline {
+  width: 99%;
+  height: 1px;
+  background-color: black;
+  margin-left: 5px;
+}
+
+#hline2 {
+  width: 75%;
+}
+
+#directorywrap {
+  display: grid;
+  grid-template-rows: 40% 15px 42% 8% 15px 7%;
+  margin: 0% 4%;
+}
+
+.directory {
+  display: grid;
+  grid-template-rows: 45px 45px 45px 45px;
+}
+
+.linkd {
+  font-family: Aeroport;
+  font-size: 40px;
+  color: black;
+  text-decoration: none;
+}
+
+.button {
+  font-family: Aeroport;
+  font-size: 1.5vw;
+  color: black;
+  text-decoration: none;
+  border: solid 0.063rem #282828;
+  margin-left: 5px;
+  padding: 7px 20px;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+#details {
+  display: grid;
+  grid-template-columns: 50% 15px 50%;
+}
+
+.contactdiv {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.contactinfo {
+  font-family: Aeroport Mono;
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+}
+
+@media (max-width: 800px) {
+  #menu {
+    top: 2.2vh;
+    right: 2vh;
+    width: 30px;
+    height: 30px;
+  }
+
+  #menu-wrapper {
+    padding: 4vh;
+  }
+
+  #directorywrap {
+    grid-template-rows: 37% 15px 42% 8% 15px 8%;
+  }
+
+  #closewrap {
+    height: 20px;
+  }
+
+  #close {
+    width: 20px;
+  }
+
+  .directory {
+    grid-template-rows: 32px 32px 32px 32px;
+  }
+
+  .linkd {
+    font-size: 32px;
+  }
+
+  .button {
+    font-size: 20px;
+  }
+
+  .contactinfo {
+    font-size: 10px;
+  }
+
+  #details {
+    grid-template-columns: 60% 15px 40%;
+  }
+}
+
+/* Landing */
+
+#landing-wrapper {
+  display: grid;
+  grid-template-rows: 50vh 100vh;
+}
+
+#landing {
+  width: 85vw;
+  display: grid;
+  align-items: stretch;
+  padding: 4.6vh;
+}
+
+.herovideo {
+  overflow: hidden;
+  display: flex;
+}
+
+#logohead {
+  height: 1.2vw;
+  padding-left: 5px;
+}
+
+#introtext {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+#buttonwrap {
+  display: grid;
+  justify-content: end;
+  align-items: center;
+}
+
+#introtextsep {
+  margin: 0 15px;
+}
+
+/* Fluid Type */
+
+@media (max-width: 800px) {
+  #landing-wrapper {
+    grid-template-rows: 30vh 70vh;
+  }
+
+  #landing {
+    width: 100vw;
+    /* grid-template-rows: 26% 1px 73% 1px; */
+    grid-row-start: 2;
+  }
+
+  #introtext {
+    grid-template-columns: 100%;
+    grid-template-rows: 4fr 1fr;
+  }
+
+  #buttonwrap {
+    display: grid;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 15px;
+  }
+
+  h1 {
+    font-size: 12vw;
+    line-height: 92%;
+    right: -55px;
+  }
+
+  #logohead {
+    display: none;
+  }
+}
+
+.fluid-type {
+  font-family: Aeroport;
+  font-size: 14px;
+  padding: 15px 5px;
+}
+
+.fluid-type-title {
+  font-family: Aeroport;
+  font-size: 50px;
+}
+
+@media screen and (min-width: 320px) {
+  .fluid-type {
+    font-size: calc(14px + 8 * ((100vw - 320px) / 960));
+  }
+  .fluid-type-title {
+    font-size: calc(50px + 8 * ((100vw - 320px) / 960));
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (min-width: 1015px) {
+  .fluid-type {
+    font-size: 16px;
+  }
+  .fluid-type-title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .fluid-type {
+    font-size: 18px;
+  }
+  .fluid-type-title {
+    font-size: 100px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .fluid-type-title {
+    font-size: 120px;
+  }
+
+  #landing{
+    width: 78vw;
+  }
+}
+
+
+
+h1 {
+    width: 100%;
+    display: inline-block;
+    align-self: flex-end;
+    margin: 0;
+    padding: 40px;
+    padding-bottom: 0;
+    font-size: 14vw;
+    font-family: Aeroport, "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 14vw;
+  }
+  
+  #filters {
+    padding-left: 40px;
+  }
+  
+  .filter {
+    all: unset;
+    padding-right: 5px;
+    font-family: Aeroport Mono, "Montserrat", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    color: rgb(146, 146, 146);
+    text-decoration: none;
+    line-height: 0.83333;
+    letter-spacing: -0.01em;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 960px) {
+    h1 {
+      padding: 0 10px;
+    }
+    #filters {
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+    .filter {
+      font-size: 16px;
+      padding-right: 0px;
+    }
+  }
+  
+  /* Filter */
+  .column {
+    display: none; /* Hide columns by default */
+  }
+  
+  .show {
+    display: block;
+  }
+  
+  .filter.active {
+    color: black;
+  }
+  
+  /* Photo Grid */
+  
+  .container {
+    padding: 20px 40px;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(1, 5vw);
+    grid-gap: 20px;
+  }
+  
+  .gallery__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .gallery__landscape9 {
+    grid-column: span 8;
+    grid-row: span 9;
+  }
+  
+  .gallery__landscape8 {
+    grid-column: span 8;
+    grid-row: span 8;
+  }
+  
+  .gallery__landscape7 {
+    grid-column: span 8;
+    grid-row: span 7;
+  }
+  
+  .gallery__landscape_small {
+    grid-column: span 4;
+    grid-row: span 5;
+  }
+  
+  .gallery__landscape_square {
+    grid-column: span 4;
+    grid-row: span 7;
+  }
+  
+  .gallery__vertical {
+    grid-column: span 4;
+    grid-row: span 8;
+  }
+  
+  @media (max-width: 960px) {
+    .container {
+      padding: 0px 10px;
+    }
+    .gallery {
+      grid-gap: 5px;
+    }
+    .gallery__landscape_small,
+    .gallery__landscape_square {
+      grid-column: span 8;
+    }
+  }
